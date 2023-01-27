@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    depends_on:
+      - database
+    image: python:3.8
+
+  metabase:
+    image: mongo:6.0.4
+    ports:
+      - "27017:27017"
+    env_file: ./metabase/config/mongo_exemple.env
+    volumes:
+      - ./db:/data/db
+
