@@ -12,7 +12,7 @@ ENV PATH="$POETRY_HOME/bin:$PATH"
 
 # Installs poetry
 RUN curl -sSL https://install.python-poetry.org | python3 - && \ 
-  poetry install --no-interaction --no-ansi -vvv
+  poetry install --no-interaction --no-ansi --no-root -vvv
 
 CMD python src/main.py
 
