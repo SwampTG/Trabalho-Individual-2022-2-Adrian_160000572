@@ -2,6 +2,13 @@ services:
   app:
     build: .
     container_name: ti_app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        poetry run pytest --cov-report xml:coverage/cov.xml --cov tests/
+        poetry run black src/
+        tail -f /dev/null
     depends_on:
       metabase:
         condition: service_started
@@ -47,9 +54,8 @@ services:
     networks:
       - meta_network
 
-  
+
 networks:
   app_network:
 
   meta_network:
-
