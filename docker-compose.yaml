@@ -43,7 +43,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./meta_storage:/docker-entrypoint-initdb.d/
+      - ./meta_storage:/var/lib/postgresql/data
     networks:
       - meta_network
 
