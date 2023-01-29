@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Lib to manage metadata of databases to be consumed by data analysis tools"
 authors = ["Lappis-UnB <caguiar@unb.br>"]
 readme = "README.md"
-packages = [{include = "trabalho_individual_2022_2_adrian_160000572"}]
+packages = [
+  {include = "src"},
+]
 
 [tool.poetry.dependencies]
 python = "3.8.16"
