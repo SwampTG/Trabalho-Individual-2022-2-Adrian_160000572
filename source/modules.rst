@@ -12,27 +12,27 @@ Word embedding
 .. automodule:: data_pipeline.feature_engineering.word_embedding
    :members:
 
-Concatenate columns
+Concatenate columns (more doc needed)
 ================
 .. automodule:: data_pipeline.pre_processing.concatenate_columns
    :members:
 
-Feature Parser
+Feature Parser (more doc needed)
 =================
 .. automodule:: parser.feature_engineering_parser
    :members:
 
-Model Parser
+Model Parser (more doc needed)
 =================
 .. automodule:: parser.model_parser
    :members:
 
-Base Parser
+Base Parser (more doc needed)
 =================
 .. automodule:: parser.parser_base
    :members:
 
-YAML Parser
+YAML Parser (more doc needed)
 =================
 .. automodule:: parser.YAML_parser
    :members:
